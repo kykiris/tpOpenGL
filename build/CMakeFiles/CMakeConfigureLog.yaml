@@ -1,0 +1,1624 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:26 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Bandizip\\"
+        - "C:\\Program Files\\MATLAB\\R2026a\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\User\\anaconda3"
+        - "C:\\Users\\User\\anaconda3\\Library"
+        - "C:\\Users\\User\\anaconda3\\Scripts"
+        - "C:\\Users\\User\\anaconda3\\Library\\bin"
+        - "C:\\Users\\User\\anaconda3\\condabin"
+        - "C:\\Users\\User\\.local\\bin"
+        - "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\User\\AppData\\Roaming\\npm"
+        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\ms-vscode-remote.remote-containers\\cli-bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      msbuild 踰꾩쟾 18.10.1-1.26427.6+3cd27c13e(.NET Framework??
+      鍮뚮뱶 ?쒖옉: 2026-10-05 ?ㅼ쟾 8:57:38
+      
+      1 ?몃뱶??"C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\4.3.3\\CompilerIdC\\CompilerIdC.vcxproj" ?꾨줈?앺듃(湲곕낯 ?\xc2\x80???낅땲??
+      PrepareForBuild:
+        "Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+        援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇?\xc2\x80 ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜?\xc2\x80 https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+        "Debug\\CompilerIdC.tlog\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+      InitializeBuildStatus:
+        "AlwaysCreate"??媛\xc2\x80) 吏\xc2\x80?뺣릺?덇린 ?뚮Ц??"Debug\\CompilerIdC.tlog\\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+        "Debug\\CompilerIdC.tlog\\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\4.3.3\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" ?뚯씪????젣?섍퀬 ?덉뒿?덈떎.
+        "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+      "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\4.3.3\\CompilerIdC\\CompilerIdC.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ?\xc2\x80??.
+      
+      鍮뚮뱶?덉뒿?덈떎.
+          寃쎄퀬 0媛?
+          ?ㅻ쪟 0媛?
+      
+      寃쎄낵 ?쒓컙: 00:00:16.31
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/4.3.3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:26 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Bandizip/"
+      - "C:/Program Files/MATLAB/R2026a/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/User/anaconda3/"
+      - "C:/Users/User/anaconda3/Library/"
+      - "C:/Users/User/anaconda3/Scripts/"
+      - "C:/Users/User/anaconda3/Library/bin/"
+      - "C:/Users/User/anaconda3/condabin/"
+      - "C:/Users/User/.local/bin/"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/User/AppData/Roaming/npm/"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Bandizip\\"
+        - "C:\\Program Files\\MATLAB\\R2026a\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\User\\anaconda3"
+        - "C:\\Users\\User\\anaconda3\\Library"
+        - "C:\\Users\\User\\anaconda3\\Scripts"
+        - "C:\\Users\\User\\anaconda3\\Library\\bin"
+        - "C:\\Users\\User\\anaconda3\\condabin"
+        - "C:\\Users\\User\\.local\\bin"
+        - "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\User\\AppData\\Roaming\\npm"
+        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\ms-vscode-remote.remote-containers\\cli-bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:26 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Bandizip/"
+      - "C:/Program Files/MATLAB/R2026a/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/User/anaconda3/"
+      - "C:/Users/User/anaconda3/Library/"
+      - "C:/Users/User/anaconda3/Scripts/"
+      - "C:/Users/User/anaconda3/Library/bin/"
+      - "C:/Users/User/anaconda3/condabin/"
+      - "C:/Users/User/.local/bin/"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/User/AppData/Roaming/npm/"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/Bandizip/lld-link.com"
+      - "C:/Program Files/Bandizip/lld-link.exe"
+      - "C:/Program Files/Bandizip/lld-link"
+      - "C:/Program Files/MATLAB/R2026a/bin/lld-link.com"
+      - "C:/Program Files/MATLAB/R2026a/bin/lld-link.exe"
+      - "C:/Program Files/MATLAB/R2026a/bin/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/User/anaconda3/lld-link.com"
+      - "C:/Users/User/anaconda3/lld-link.exe"
+      - "C:/Users/User/anaconda3/lld-link"
+      - "C:/Users/User/anaconda3/Library/lld-link.com"
+      - "C:/Users/User/anaconda3/Library/lld-link.exe"
+      - "C:/Users/User/anaconda3/Library/lld-link"
+      - "C:/Users/User/anaconda3/Scripts/lld-link.com"
+      - "C:/Users/User/anaconda3/Scripts/lld-link.exe"
+      - "C:/Users/User/anaconda3/Scripts/lld-link"
+      - "C:/Users/User/anaconda3/Library/bin/lld-link.com"
+      - "C:/Users/User/anaconda3/Library/bin/lld-link.exe"
+      - "C:/Users/User/anaconda3/Library/bin/lld-link"
+      - "C:/Users/User/anaconda3/condabin/lld-link.com"
+      - "C:/Users/User/anaconda3/condabin/lld-link.exe"
+      - "C:/Users/User/anaconda3/condabin/lld-link"
+      - "C:/Users/User/.local/bin/lld-link.com"
+      - "C:/Users/User/.local/bin/lld-link.exe"
+      - "C:/Users/User/.local/bin/lld-link"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/lld-link.com"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/lld-link.exe"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/lld-link"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/User/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/User/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/User/AppData/Roaming/npm/lld-link"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/lld-link.com"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/lld-link.exe"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/lld-link"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.com"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.exe"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Bandizip\\"
+        - "C:\\Program Files\\MATLAB\\R2026a\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\User\\anaconda3"
+        - "C:\\Users\\User\\anaconda3\\Library"
+        - "C:\\Users\\User\\anaconda3\\Scripts"
+        - "C:\\Users\\User\\anaconda3\\Library\\bin"
+        - "C:\\Users\\User\\anaconda3\\condabin"
+        - "C:\\Users\\User\\.local\\bin"
+        - "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\User\\AppData\\Roaming\\npm"
+        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\ms-vscode-remote.remote-containers\\cli-bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:26 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Bandizip/"
+      - "C:/Program Files/MATLAB/R2026a/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/User/anaconda3/"
+      - "C:/Users/User/anaconda3/Library/"
+      - "C:/Users/User/anaconda3/Scripts/"
+      - "C:/Users/User/anaconda3/Library/bin/"
+      - "C:/Users/User/anaconda3/condabin/"
+      - "C:/Users/User/.local/bin/"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/User/AppData/Roaming/npm/"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Bandizip\\"
+        - "C:\\Program Files\\MATLAB\\R2026a\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\User\\anaconda3"
+        - "C:\\Users\\User\\anaconda3\\Library"
+        - "C:\\Users\\User\\anaconda3\\Scripts"
+        - "C:\\Users\\User\\anaconda3\\Library\\bin"
+        - "C:\\Users\\User\\anaconda3\\condabin"
+        - "C:\\Users\\User\\.local\\bin"
+        - "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\User\\AppData\\Roaming\\npm"
+        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\ms-vscode-remote.remote-containers\\cli-bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:26 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Bandizip/"
+      - "C:/Program Files/MATLAB/R2026a/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/User/anaconda3/"
+      - "C:/Users/User/anaconda3/Library/"
+      - "C:/Users/User/anaconda3/Scripts/"
+      - "C:/Users/User/anaconda3/Library/bin/"
+      - "C:/Users/User/anaconda3/condabin/"
+      - "C:/Users/User/.local/bin/"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/User/AppData/Roaming/npm/"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files/Bandizip/mt.com"
+      - "C:/Program Files/Bandizip/mt.exe"
+      - "C:/Program Files/Bandizip/mt"
+      - "C:/Program Files/MATLAB/R2026a/bin/mt.com"
+      - "C:/Program Files/MATLAB/R2026a/bin/mt.exe"
+      - "C:/Program Files/MATLAB/R2026a/bin/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Users/User/anaconda3/mt.com"
+      - "C:/Users/User/anaconda3/mt.exe"
+      - "C:/Users/User/anaconda3/mt"
+      - "C:/Users/User/anaconda3/Library/mt.com"
+      - "C:/Users/User/anaconda3/Library/mt.exe"
+      - "C:/Users/User/anaconda3/Library/mt"
+      - "C:/Users/User/anaconda3/Scripts/mt.com"
+      - "C:/Users/User/anaconda3/Scripts/mt.exe"
+      - "C:/Users/User/anaconda3/Scripts/mt"
+      - "C:/Users/User/anaconda3/Library/bin/mt.com"
+      - "C:/Users/User/anaconda3/Library/bin/mt.exe"
+      - "C:/Users/User/anaconda3/Library/bin/mt"
+      - "C:/Users/User/anaconda3/condabin/mt.com"
+      - "C:/Users/User/anaconda3/condabin/mt.exe"
+      - "C:/Users/User/anaconda3/condabin/mt"
+      - "C:/Users/User/.local/bin/mt.com"
+      - "C:/Users/User/.local/bin/mt.exe"
+      - "C:/Users/User/.local/bin/mt"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/mt.com"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/mt.exe"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/mt"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/User/AppData/Roaming/npm/mt.com"
+      - "C:/Users/User/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/User/AppData/Roaming/npm/mt"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/mt.com"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/mt.exe"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/mt"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/mt.com"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/mt.exe"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Bandizip\\"
+        - "C:\\Program Files\\MATLAB\\R2026a\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\User\\anaconda3"
+        - "C:\\Users\\User\\anaconda3\\Library"
+        - "C:\\Users\\User\\anaconda3\\Scripts"
+        - "C:\\Users\\User\\anaconda3\\Library\\bin"
+        - "C:\\Users\\User\\anaconda3\\condabin"
+        - "C:\\Users\\User\\.local\\bin"
+        - "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\User\\AppData\\Roaming\\npm"
+        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\ms-vscode-remote.remote-containers\\cli-bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:26 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Bandizip/"
+      - "C:/Program Files/MATLAB/R2026a/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/User/anaconda3/"
+      - "C:/Users/User/anaconda3/Library/"
+      - "C:/Users/User/anaconda3/Scripts/"
+      - "C:/Users/User/anaconda3/Library/bin/"
+      - "C:/Users/User/anaconda3/condabin/"
+      - "C:/Users/User/.local/bin/"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/User/AppData/Roaming/npm/"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Bandizip\\"
+        - "C:\\Program Files\\MATLAB\\R2026a\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\User\\anaconda3"
+        - "C:\\Users\\User\\anaconda3\\Library"
+        - "C:\\Users\\User\\anaconda3\\Scripts"
+        - "C:\\Users\\User\\anaconda3\\Library\\bin"
+        - "C:\\Users\\User\\anaconda3\\condabin"
+        - "C:\\Users\\User\\.local\\bin"
+        - "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\User\\AppData\\Roaming\\npm"
+        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\ms-vscode-remote.remote-containers\\cli-bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:26 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Bandizip\\"
+        - "C:\\Program Files\\MATLAB\\R2026a\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\User\\anaconda3"
+        - "C:\\Users\\User\\anaconda3\\Library"
+        - "C:\\Users\\User\\anaconda3\\Scripts"
+        - "C:\\Users\\User\\anaconda3\\Library\\bin"
+        - "C:\\Users\\User\\anaconda3\\condabin"
+        - "C:\\Users\\User\\.local\\bin"
+        - "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\User\\AppData\\Roaming\\npm"
+        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\ms-vscode-remote.remote-containers\\cli-bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      msbuild 踰꾩쟾 18.10.1-1.26427.6+3cd27c13e(.NET Framework??
+      鍮뚮뱶 ?쒖옉: 2026-10-05 ?ㅼ쟾 8:57:59
+      
+      1 ?몃뱶??"C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ?꾨줈?앺듃(湲곕낯 ?\xc2\x80???낅땲??
+      PrepareForBuild:
+        "Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+        援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇?\xc2\x80 ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜?\xc2\x80 https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+        "Debug\\CompilerIdCXX.tlog\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+      InitializeBuildStatus:
+        "AlwaysCreate"??媛\xc2\x80) 吏\xc2\x80?뺣릺?덇린 ?뚮Ц??"Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+        "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" ?뚯씪????젣?섍퀬 ?덉뒿?덈떎.
+        "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+      "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\4.3.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ?\xc2\x80??.
+      
+      鍮뚮뱶?덉뒿?덈떎.
+          寃쎄퀬 0媛?
+          ?ㅻ쪟 0媛?
+      
+      寃쎄낵 ?쒓컙: 00:00:05.52
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/4.3.3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:26 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Bandizip/"
+      - "C:/Program Files/MATLAB/R2026a/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/User/anaconda3/"
+      - "C:/Users/User/anaconda3/Library/"
+      - "C:/Users/User/anaconda3/Scripts/"
+      - "C:/Users/User/anaconda3/Library/bin/"
+      - "C:/Users/User/anaconda3/condabin/"
+      - "C:/Users/User/.local/bin/"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/User/AppData/Roaming/npm/"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/Bandizip/lld-link.com"
+      - "C:/Program Files/Bandizip/lld-link.exe"
+      - "C:/Program Files/Bandizip/lld-link"
+      - "C:/Program Files/MATLAB/R2026a/bin/lld-link.com"
+      - "C:/Program Files/MATLAB/R2026a/bin/lld-link.exe"
+      - "C:/Program Files/MATLAB/R2026a/bin/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/User/anaconda3/lld-link.com"
+      - "C:/Users/User/anaconda3/lld-link.exe"
+      - "C:/Users/User/anaconda3/lld-link"
+      - "C:/Users/User/anaconda3/Library/lld-link.com"
+      - "C:/Users/User/anaconda3/Library/lld-link.exe"
+      - "C:/Users/User/anaconda3/Library/lld-link"
+      - "C:/Users/User/anaconda3/Scripts/lld-link.com"
+      - "C:/Users/User/anaconda3/Scripts/lld-link.exe"
+      - "C:/Users/User/anaconda3/Scripts/lld-link"
+      - "C:/Users/User/anaconda3/Library/bin/lld-link.com"
+      - "C:/Users/User/anaconda3/Library/bin/lld-link.exe"
+      - "C:/Users/User/anaconda3/Library/bin/lld-link"
+      - "C:/Users/User/anaconda3/condabin/lld-link.com"
+      - "C:/Users/User/anaconda3/condabin/lld-link.exe"
+      - "C:/Users/User/anaconda3/condabin/lld-link"
+      - "C:/Users/User/.local/bin/lld-link.com"
+      - "C:/Users/User/.local/bin/lld-link.exe"
+      - "C:/Users/User/.local/bin/lld-link"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/lld-link.com"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/lld-link.exe"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/lld-link"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/User/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/User/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/User/AppData/Roaming/npm/lld-link"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/lld-link.com"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/lld-link.exe"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/lld-link"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.com"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.exe"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Bandizip\\"
+        - "C:\\Program Files\\MATLAB\\R2026a\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\User\\anaconda3"
+        - "C:\\Users\\User\\anaconda3\\Library"
+        - "C:\\Users\\User\\anaconda3\\Scripts"
+        - "C:\\Users\\User\\anaconda3\\Library\\bin"
+        - "C:\\Users\\User\\anaconda3\\condabin"
+        - "C:\\Users\\User\\.local\\bin"
+        - "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\User\\AppData\\Roaming\\npm"
+        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\ms-vscode-remote.remote-containers\\cli-bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:592 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:565 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:26 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Bandizip/"
+      - "C:/Program Files/MATLAB/R2026a/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/User/anaconda3/"
+      - "C:/Users/User/anaconda3/Library/"
+      - "C:/Users/User/anaconda3/Scripts/"
+      - "C:/Users/User/anaconda3/Library/bin/"
+      - "C:/Users/User/anaconda3/condabin/"
+      - "C:/Users/User/.local/bin/"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/User/AppData/Roaming/npm/"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/tpOpenGL/bin/"
+      - "C:/Program Files (x86)/tpOpenGL/sbin/"
+      - "C:/Program Files (x86)/tpOpenGL/"
+    searched_directories:
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files/Bandizip/rc.com"
+      - "C:/Program Files/Bandizip/rc.exe"
+      - "C:/Program Files/Bandizip/rc"
+      - "C:/Program Files/MATLAB/R2026a/bin/rc.com"
+      - "C:/Program Files/MATLAB/R2026a/bin/rc.exe"
+      - "C:/Program Files/MATLAB/R2026a/bin/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Users/User/anaconda3/rc.com"
+      - "C:/Users/User/anaconda3/rc.exe"
+      - "C:/Users/User/anaconda3/rc"
+      - "C:/Users/User/anaconda3/Library/rc.com"
+      - "C:/Users/User/anaconda3/Library/rc.exe"
+      - "C:/Users/User/anaconda3/Library/rc"
+      - "C:/Users/User/anaconda3/Scripts/rc.com"
+      - "C:/Users/User/anaconda3/Scripts/rc.exe"
+      - "C:/Users/User/anaconda3/Scripts/rc"
+      - "C:/Users/User/anaconda3/Library/bin/rc.com"
+      - "C:/Users/User/anaconda3/Library/bin/rc.exe"
+      - "C:/Users/User/anaconda3/Library/bin/rc"
+      - "C:/Users/User/anaconda3/condabin/rc.com"
+      - "C:/Users/User/anaconda3/condabin/rc.exe"
+      - "C:/Users/User/anaconda3/condabin/rc"
+      - "C:/Users/User/.local/bin/rc.com"
+      - "C:/Users/User/.local/bin/rc.exe"
+      - "C:/Users/User/.local/bin/rc"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/rc.com"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/rc.exe"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/rc"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/User/AppData/Roaming/npm/rc.com"
+      - "C:/Users/User/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/User/AppData/Roaming/npm/rc"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/rc.com"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/rc.exe"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/rc"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/rc.com"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/rc.exe"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/tpOpenGL/bin/rc.com"
+      - "C:/Program Files (x86)/tpOpenGL/bin/rc.exe"
+      - "C:/Program Files (x86)/tpOpenGL/bin/rc"
+      - "C:/Program Files (x86)/tpOpenGL/sbin/rc.com"
+      - "C:/Program Files (x86)/tpOpenGL/sbin/rc.exe"
+      - "C:/Program Files (x86)/tpOpenGL/sbin/rc"
+      - "C:/Program Files (x86)/tpOpenGL/rc.com"
+      - "C:/Program Files (x86)/tpOpenGL/rc.exe"
+      - "C:/Program Files (x86)/tpOpenGL/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Bandizip\\"
+        - "C:\\Program Files\\MATLAB\\R2026a\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\User\\anaconda3"
+        - "C:\\Users\\User\\anaconda3\\Library"
+        - "C:\\Users\\User\\anaconda3\\Scripts"
+        - "C:\\Users\\User\\anaconda3\\Library\\bin"
+        - "C:\\Users\\User\\anaconda3\\condabin"
+        - "C:\\Users\\User\\.local\\bin"
+        - "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\User\\AppData\\Roaming\\npm"
+        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\ms-vscode-remote.remote-containers\\cli-bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/tpOpenGL"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/tpOpenGL"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:26 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-mkr8j6"
+      binary: "C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-mkr8j6"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-mkr8j6'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_728e4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        msbuild 踰꾩쟾 18.10.1-1.26427.6+3cd27c13e(.NET Framework??
+        鍮뚮뱶 ?쒖옉: 2026-10-05 ?ㅼ쟾 8:58:10
+        
+        1 ?몃뱶??"C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mkr8j6\\cmTC_728e4.vcxproj" ?꾨줈?앺듃(湲곕낯 ?\xc2\x80???낅땲??
+        PrepareForBuild:
+          援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇?\xc2\x80 ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜?\xc2\x80 https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+          "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mkr8j6\\Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_728e4.dir\\Debug\\cmTC_728e4.tlog\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+        InitializeBuildStatus:
+          "AlwaysCreate"??媛\xc2\x80) 吏\xc2\x80?뺣릺?덇린 ?뚮Ц??"cmTC_728e4.dir\\Debug\\cmTC_728e4.tlog\\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_728e4.dir\\Debug\\cmTC_728e4.tlog\\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_728e4.dir\\Debug\\\\" /Fd"cmTC_728e4.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36257 for x64
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_728e4.dir\\Debug\\\\" /Fd"cmTC_728e4.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mkr8j6\\Debug\\cmTC_728e4.exe" /INCREMENTAL /ILK:"cmTC_728e4.dir\\Debug\\cmTC_728e4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-mkr8j6/Debug/cmTC_728e4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-mkr8j6/Debug/cmTC_728e4.lib" /MACHINE:X64  /machine:x64 cmTC_728e4.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_728e4.vcxproj -> C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mkr8j6\\Debug\\cmTC_728e4.exe
+        FinalizeBuildStatus:
+          "cmTC_728e4.dir\\Debug\\cmTC_728e4.tlog\\unsuccessfulbuild" ?뚯씪????젣?섍퀬 ?덉뒿?덈떎.
+          "cmTC_728e4.dir\\Debug\\cmTC_728e4.tlog\\cmTC_728e4.lastbuildstate"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+        "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mkr8j6\\cmTC_728e4.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ?\xc2\x80??.
+        
+        鍮뚮뱶?덉뒿?덈떎.
+            寃쎄퀬 0媛?
+            ?ㅻ쪟 0媛?
+        
+        寃쎄낵 ?쒓컙: 00:00:02.59
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.51.36257.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:26 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-f8e5rl"
+      binary: "C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-f8e5rl"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-f8e5rl'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_26eba.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        msbuild 踰꾩쟾 18.10.1-1.26427.6+3cd27c13e(.NET Framework??
+        鍮뚮뱶 ?쒖옉: 2026-10-05 ?ㅼ쟾 8:58:18
+        
+        1 ?몃뱶??"C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f8e5rl\\cmTC_26eba.vcxproj" ?꾨줈?앺듃(湲곕낯 ?\xc2\x80???낅땲??
+        PrepareForBuild:
+          援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇?\xc2\x80 ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜?\xc2\x80 https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+          "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f8e5rl\\Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_26eba.dir\\Debug\\cmTC_26eba.tlog\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+        InitializeBuildStatus:
+          "AlwaysCreate"??媛\xc2\x80) 吏\xc2\x80?뺣릺?덇린 ?뚮Ц??"cmTC_26eba.dir\\Debug\\cmTC_26eba.tlog\\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_26eba.dir\\Debug\\cmTC_26eba.tlog\\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_26eba.dir\\Debug\\\\" /Fd"cmTC_26eba.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36257 for x64
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_26eba.dir\\Debug\\\\" /Fd"cmTC_26eba.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f8e5rl\\Debug\\cmTC_26eba.exe" /INCREMENTAL /ILK:"cmTC_26eba.dir\\Debug\\cmTC_26eba.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-f8e5rl/Debug/cmTC_26eba.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-f8e5rl/Debug/cmTC_26eba.lib" /MACHINE:X64  /machine:x64 cmTC_26eba.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_26eba.vcxproj -> C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f8e5rl\\Debug\\cmTC_26eba.exe
+        FinalizeBuildStatus:
+          "cmTC_26eba.dir\\Debug\\cmTC_26eba.tlog\\unsuccessfulbuild" ?뚯씪????젣?섍퀬 ?덉뒿?덈떎.
+          "cmTC_26eba.dir\\Debug\\cmTC_26eba.tlog\\cmTC_26eba.lastbuildstate"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+        "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f8e5rl\\cmTC_26eba.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ?\xc2\x80??.
+        
+        鍮뚮뱶?덉뒿?덈떎.
+            寃쎄퀬 0媛?
+            ?ㅻ쪟 0媛?
+        
+        寃쎄낵 ?쒓컙: 00:00:02.54
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:26 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.51.36231/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.51.36257.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:160 (check_c_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "dep/glfw/CMakeLists.txt:48 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-v1qdo1"
+      binary: "C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-v1qdo1"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/dep/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-v1qdo1'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a4f39.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        msbuild 踰꾩쟾 18.10.1-1.26427.6+3cd27c13e(.NET Framework??
+        鍮뚮뱶 ?쒖옉: 2026-10-05 ?ㅼ쟾 8:58:25
+        
+        1 ?몃뱶??"C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v1qdo1\\cmTC_a4f39.vcxproj" ?꾨줈?앺듃(湲곕낯 ?\xc2\x80???낅땲??
+        PrepareForBuild:
+          援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇?\xc2\x80 ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜?\xc2\x80 https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+          "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v1qdo1\\Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_a4f39.dir\\Debug\\cmTC_a4f39.tlog\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+        InitializeBuildStatus:
+          "AlwaysCreate"??媛\xc2\x80) 吏\xc2\x80?뺣릺?덇린 ?뚮Ц??"cmTC_a4f39.dir\\Debug\\cmTC_a4f39.tlog\\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_a4f39.dir\\Debug\\cmTC_a4f39.tlog\\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_a4f39.dir\\Debug\\\\" /Fd"cmTC_a4f39.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v1qdo1\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36257 for x64
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_a4f39.dir\\Debug\\\\" /Fd"cmTC_a4f39.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v1qdo1\\src.c"
+          src.c
+        C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v1qdo1\\src.c(1,10): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'pthread.h': No such file or directory [C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v1qdo1\\cmTC_a4f39.vcxproj]
+        "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v1qdo1\\cmTC_a4f39.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ?\xc2\x80??. - ?ㅽ뙣
+        
+        鍮뚮뱶?섏? 紐삵뻽?듬땲??
+        
+        "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v1qdo1\\cmTC_a4f39.vcxproj"(湲곕낯 ?\xc2\x80??(1)->
+        (ClCompile ?\xc2\x80?? -> 
+          C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v1qdo1\\src.c(1,10): error C1083: ?ы븿 ?뚯씪???????놁뒿?덈떎. 'pthread.h': No such file or directory [C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v1qdo1\\cmTC_a4f39.vcxproj]
+        
+            寃쎄퀬 0媛?
+            ?ㅻ쪟 1媛?
+        
+        寃쎄낵 ?쒓컙: 00:00:02.79
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:238 (_threads_check_lib)"
+      - "dep/glfw/CMakeLists.txt:48 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-9770co"
+      binary: "C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-9770co"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/dep/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-9770co'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9e201.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        msbuild 踰꾩쟾 18.10.1-1.26427.6+3cd27c13e(.NET Framework??
+        鍮뚮뱶 ?쒖옉: 2026-10-05 ?ㅼ쟾 8:58:32
+        
+        1 ?몃뱶??"C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9770co\\cmTC_9e201.vcxproj" ?꾨줈?앺듃(湲곕낯 ?\xc2\x80???낅땲??
+        PrepareForBuild:
+          援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇?\xc2\x80 ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜?\xc2\x80 https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+          "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9770co\\Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_9e201.dir\\Debug\\cmTC_9e201.tlog\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+        InitializeBuildStatus:
+          "AlwaysCreate"??媛\xc2\x80) 吏\xc2\x80?뺣릺?덇린 ?뚮Ц??"cmTC_9e201.dir\\Debug\\cmTC_9e201.tlog\\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_9e201.dir\\Debug\\cmTC_9e201.tlog\\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_9e201.dir\\Debug\\\\" /Fd"cmTC_9e201.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9770co\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36257 for x64
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_9e201.dir\\Debug\\\\" /Fd"cmTC_9e201.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9770co\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9770co\\Debug\\cmTC_9e201.exe" /INCREMENTAL /ILK:"cmTC_9e201.dir\\Debug\\cmTC_9e201.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-9770co/Debug/cmTC_9e201.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-9770co/Debug/cmTC_9e201.lib" /MACHINE:X64  /machine:x64 cmTC_9e201.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 'pthreads.lib' ?뚯씪???????놁뒿?덈떎. [C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9770co\\cmTC_9e201.vcxproj]
+        "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9770co\\cmTC_9e201.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ?\xc2\x80??. - ?ㅽ뙣
+        
+        鍮뚮뱶?섏? 紐삵뻽?듬땲??
+        
+        "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9770co\\cmTC_9e201.vcxproj"(湲곕낯 ?\xc2\x80??(1)->
+        (Link ?\xc2\x80?? -> 
+          LINK : fatal error LNK1104: 'pthreads.lib' ?뚯씪???????놁뒿?덈떎. [C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9770co\\cmTC_9e201.vcxproj]
+        
+            寃쎄퀬 0媛?
+            ?ㅻ쪟 1媛?
+        
+        寃쎄낵 ?쒓컙: 00:00:02.34
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindThreads.cmake:239 (_threads_check_lib)"
+      - "dep/glfw/CMakeLists.txt:48 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-99zpmf"
+      binary: "C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-99zpmf"
+    cmakeVariables:
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/dep/glfw/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-99zpmf'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4e553.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        msbuild 踰꾩쟾 18.10.1-1.26427.6+3cd27c13e(.NET Framework??
+        鍮뚮뱶 ?쒖옉: 2026-10-05 ?ㅼ쟾 8:58:38
+        
+        1 ?몃뱶??"C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-99zpmf\\cmTC_4e553.vcxproj" ?꾨줈?앺듃(湲곕낯 ?\xc2\x80???낅땲??
+        PrepareForBuild:
+          援ъ“??異쒕젰???ъ슜?????덉뒿?덈떎. 而댄뙆?쇰윭 吏꾨떒???쒖떇?\xc2\x80 ?ㅻ쪟 怨꾩링 援ъ“瑜?諛섏쁺?⑸땲?? ?먯꽭???댁슜?\xc2\x80 https://aka.ms/cpp/structured-output??李몄“?섏꽭??
+          "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-99zpmf\\Debug\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_4e553.dir\\Debug\\cmTC_4e553.tlog\\" ?붾젆?곕━瑜?留뚮뱾怨??덉뒿?덈떎.
+        InitializeBuildStatus:
+          "AlwaysCreate"??媛\xc2\x80) 吏\xc2\x80?뺣릺?덇린 ?뚮Ц??"cmTC_4e553.dir\\Debug\\cmTC_4e553.tlog\\unsuccessfulbuild"??瑜? 留뚮뱾怨??덉뒿?덈떎.
+          "cmTC_4e553.dir\\Debug\\cmTC_4e553.tlog\\unsuccessfulbuild"???곌껐(touching)?섍퀬 ?덉뒿?덈떎.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_4e553.dir\\Debug\\\\" /Fd"cmTC_4e553.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-99zpmf\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36257 for x64
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_4e553.dir\\Debug\\\\" /Fd"cmTC_4e553.dir\\Debug\\vc145.pdb" /external:W3 /TC /errorReport:queue "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-99zpmf\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.51.36231\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-99zpmf\\Debug\\cmTC_4e553.exe" /INCREMENTAL /ILK:"cmTC_4e553.dir\\Debug\\cmTC_4e553.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-99zpmf/Debug/cmTC_4e553.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/CMakeFiles/CMakeScratch/TryCompile-99zpmf/Debug/cmTC_4e553.lib" /MACHINE:X64  /machine:x64 cmTC_4e553.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 'pthread.lib' ?뚯씪???????놁뒿?덈떎. [C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-99zpmf\\cmTC_4e553.vcxproj]
+        "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-99zpmf\\cmTC_4e553.vcxproj" ?꾨줈?앺듃瑜?鍮뚮뱶?덉뒿?덈떎(湲곕낯 ?\xc2\x80??. - ?ㅽ뙣
+        
+        鍮뚮뱶?섏? 紐삵뻽?듬땲??
+        
+        "C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-99zpmf\\cmTC_4e553.vcxproj"(湲곕낯 ?\xc2\x80??(1)->
+        (Link ?\xc2\x80?? -> 
+          LINK : fatal error LNK1104: 'pthread.lib' ?뚯씪???????놁뒿?덈떎. [C:\\Users\\User\\OneDrive\\Desktop\\TELECOM_PARIS\\Computer_Graphics\\TP00-OpenGL\\TP00-OpenGL\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-99zpmf\\cmTC_4e553.vcxproj]
+        
+            寃쎄퀬 0媛?
+            ?ㅻ쪟 1媛?
+        
+        寃쎄낵 ?쒓컙: 00:00:02.30
+        
+      exitCode: 1
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindDoxygen.cmake:770 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindDoxygen.cmake:955 (_Doxygen_find_doxygen)"
+      - "dep/glfw/docs/CMakeLists.txt:39 (find_package)"
+    mode: "program"
+    variable: "DOXYGEN_EXECUTABLE"
+    description: "Doxygen documentation generation tool (https://www.doxygen.nl)"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "doxygen"
+    candidate_directories:
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Bandizip/"
+      - "C:/Program Files/MATLAB/R2026a/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/User/anaconda3/"
+      - "C:/Users/User/anaconda3/Library/"
+      - "C:/Users/User/anaconda3/Scripts/"
+      - "C:/Users/User/anaconda3/Library/bin/"
+      - "C:/Users/User/anaconda3/condabin/"
+      - "C:/Users/User/.local/bin/"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/User/AppData/Roaming/npm/"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/tpOpenGL/bin/"
+      - "C:/Program Files (x86)/tpOpenGL/sbin/"
+      - "C:/Program Files (x86)/tpOpenGL/"
+      - "/REGISTRY-NOTFOUND/bin/"
+      - "/Applications/Doxygen.app/Contents/Resources/"
+      - "/Applications/Doxygen.app/Contents/MacOS/"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/"
+    searched_directories:
+      - "C:/Windows/System32/doxygen.com"
+      - "C:/Windows/System32/doxygen.exe"
+      - "C:/Windows/System32/doxygen"
+      - "C:/Windows/doxygen.com"
+      - "C:/Windows/doxygen.exe"
+      - "C:/Windows/doxygen"
+      - "C:/Windows/System32/wbem/doxygen.com"
+      - "C:/Windows/System32/wbem/doxygen.exe"
+      - "C:/Windows/System32/wbem/doxygen"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen"
+      - "C:/Windows/System32/OpenSSH/doxygen.com"
+      - "C:/Windows/System32/OpenSSH/doxygen.exe"
+      - "C:/Windows/System32/OpenSSH/doxygen"
+      - "C:/Program Files/nodejs/doxygen.com"
+      - "C:/Program Files/nodejs/doxygen.exe"
+      - "C:/Program Files/nodejs/doxygen"
+      - "C:/Program Files/Git/cmd/doxygen.com"
+      - "C:/Program Files/Git/cmd/doxygen.exe"
+      - "C:/Program Files/Git/cmd/doxygen"
+      - "C:/Program Files/dotnet/doxygen.com"
+      - "C:/Program Files/dotnet/doxygen.exe"
+      - "C:/Program Files/dotnet/doxygen"
+      - "C:/Program Files/Bandizip/doxygen.com"
+      - "C:/Program Files/Bandizip/doxygen.exe"
+      - "C:/Program Files/Bandizip/doxygen"
+      - "C:/Program Files/MATLAB/R2026a/bin/doxygen.com"
+      - "C:/Program Files/MATLAB/R2026a/bin/doxygen.exe"
+      - "C:/Program Files/MATLAB/R2026a/bin/doxygen"
+      - "C:/Program Files/CMake/bin/doxygen.com"
+      - "C:/Program Files/CMake/bin/doxygen.exe"
+      - "C:/Program Files/CMake/bin/doxygen"
+      - "C:/Users/User/anaconda3/doxygen.com"
+      - "C:/Users/User/anaconda3/doxygen.exe"
+      - "C:/Users/User/anaconda3/doxygen"
+      - "C:/Users/User/anaconda3/Library/doxygen.com"
+      - "C:/Users/User/anaconda3/Library/doxygen.exe"
+      - "C:/Users/User/anaconda3/Library/doxygen"
+      - "C:/Users/User/anaconda3/Scripts/doxygen.com"
+      - "C:/Users/User/anaconda3/Scripts/doxygen.exe"
+      - "C:/Users/User/anaconda3/Scripts/doxygen"
+      - "C:/Users/User/anaconda3/Library/bin/doxygen.com"
+      - "C:/Users/User/anaconda3/Library/bin/doxygen.exe"
+      - "C:/Users/User/anaconda3/Library/bin/doxygen"
+      - "C:/Users/User/anaconda3/condabin/doxygen.com"
+      - "C:/Users/User/anaconda3/condabin/doxygen.exe"
+      - "C:/Users/User/anaconda3/condabin/doxygen"
+      - "C:/Users/User/.local/bin/doxygen.com"
+      - "C:/Users/User/.local/bin/doxygen.exe"
+      - "C:/Users/User/.local/bin/doxygen"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/doxygen.com"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/doxygen.exe"
+      - "C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/14.2 rel1/bin/doxygen"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/doxygen.com"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/doxygen.exe"
+      - "C:/Users/User/AppData/Local/Microsoft/WindowsApps/doxygen"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/doxygen.com"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/doxygen.exe"
+      - "C:/Users/User/AppData/Local/Programs/Microsoft VS Code/bin/doxygen"
+      - "C:/Users/User/AppData/Roaming/npm/doxygen.com"
+      - "C:/Users/User/AppData/Roaming/npm/doxygen.exe"
+      - "C:/Users/User/AppData/Roaming/npm/doxygen"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/doxygen.com"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/doxygen.exe"
+      - "C:/Users/User/AppData/Roaming/Code/User/globalStorage/ms-vscode-remote.remote-containers/cli-bin/doxygen"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/doxygen.com"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/doxygen.exe"
+      - "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe/doxygen"
+      - "C:/Program Files/bin/doxygen.com"
+      - "C:/Program Files/bin/doxygen.exe"
+      - "C:/Program Files/bin/doxygen"
+      - "C:/Program Files/sbin/doxygen.com"
+      - "C:/Program Files/sbin/doxygen.exe"
+      - "C:/Program Files/sbin/doxygen"
+      - "C:/Program Files/doxygen.com"
+      - "C:/Program Files/doxygen.exe"
+      - "C:/Program Files/doxygen"
+      - "C:/Program Files (x86)/bin/doxygen.com"
+      - "C:/Program Files (x86)/bin/doxygen.exe"
+      - "C:/Program Files (x86)/bin/doxygen"
+      - "C:/Program Files (x86)/sbin/doxygen.com"
+      - "C:/Program Files (x86)/sbin/doxygen.exe"
+      - "C:/Program Files (x86)/sbin/doxygen"
+      - "C:/Program Files (x86)/doxygen.com"
+      - "C:/Program Files (x86)/doxygen.exe"
+      - "C:/Program Files (x86)/doxygen"
+      - "C:/Program Files/CMake/bin/doxygen.com"
+      - "C:/Program Files/CMake/bin/doxygen.exe"
+      - "C:/Program Files/CMake/bin/doxygen"
+      - "C:/Program Files/CMake/sbin/doxygen.com"
+      - "C:/Program Files/CMake/sbin/doxygen.exe"
+      - "C:/Program Files/CMake/sbin/doxygen"
+      - "C:/Program Files/CMake/doxygen.com"
+      - "C:/Program Files/CMake/doxygen.exe"
+      - "C:/Program Files/CMake/doxygen"
+      - "C:/Program Files (x86)/tpOpenGL/bin/doxygen.com"
+      - "C:/Program Files (x86)/tpOpenGL/bin/doxygen.exe"
+      - "C:/Program Files (x86)/tpOpenGL/bin/doxygen"
+      - "C:/Program Files (x86)/tpOpenGL/sbin/doxygen.com"
+      - "C:/Program Files (x86)/tpOpenGL/sbin/doxygen.exe"
+      - "C:/Program Files (x86)/tpOpenGL/sbin/doxygen"
+      - "C:/Program Files (x86)/tpOpenGL/doxygen.com"
+      - "C:/Program Files (x86)/tpOpenGL/doxygen.exe"
+      - "C:/Program Files (x86)/tpOpenGL/doxygen"
+      - "/REGISTRY-NOTFOUND/bin/doxygen.com"
+      - "/REGISTRY-NOTFOUND/bin/doxygen.exe"
+      - "/REGISTRY-NOTFOUND/bin/doxygen"
+      - "/Applications/Doxygen.app/Contents/Resources/doxygen.com"
+      - "/Applications/Doxygen.app/Contents/Resources/doxygen.exe"
+      - "/Applications/Doxygen.app/Contents/Resources/doxygen"
+      - "/Applications/Doxygen.app/Contents/MacOS/doxygen.com"
+      - "/Applications/Doxygen.app/Contents/MacOS/doxygen.exe"
+      - "/Applications/Doxygen.app/Contents/MacOS/doxygen"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/doxygen.com"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/doxygen.exe"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/doxygen"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/doxygen.com"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/doxygen.exe"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/doxygen"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Bandizip\\"
+        - "C:\\Program Files\\MATLAB\\R2026a\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\User\\anaconda3"
+        - "C:\\Users\\User\\anaconda3\\Library"
+        - "C:\\Users\\User\\anaconda3\\Scripts"
+        - "C:\\Users\\User\\anaconda3\\Library\\bin"
+        - "C:\\Users\\User\\anaconda3\\condabin"
+        - "C:\\Users\\User\\.local\\bin"
+        - "C:\\Program Files (x86)\\Arm GNU Toolchain arm-none-eabi\\14.2 rel1\\bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\User\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\User\\AppData\\Roaming\\npm"
+        - "c:\\Users\\User\\AppData\\Roaming\\Code\\User\\globalStorage\\ms-vscode-remote.remote-containers\\cli-bin"
+        - "C:\\Users\\User\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/tpOpenGL"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/tpOpenGL"
+...

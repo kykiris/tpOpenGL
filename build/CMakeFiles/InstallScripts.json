@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/cmake_install.cmake",
+		"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/dep/glfw/cmake_install.cmake",
+		"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/dep/glfw/src/cmake_install.cmake",
+		"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/dep/glfw/docs/cmake_install.cmake",
+		"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/dep/glm/cmake_install.cmake",
+		"C:/Users/User/OneDrive/Desktop/TELECOM_PARIS/Computer_Graphics/TP00-OpenGL/TP00-OpenGL/src/build/dep/glm/glm/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
