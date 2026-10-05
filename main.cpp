@@ -52,6 +52,7 @@ GLuint g_program = 0; // A GPU program contains at least a vertex shader and a f
 // OpenGL identifiers
 GLuint g_vao = 0;
 GLuint g_posVbo = 0;
+GLuint g_colorVbo = 0;
 GLuint g_ibo = 0;
 
 // All vertex positions packed in one array [x0, y0, z0, x1, y1, z1, ...]
@@ -251,14 +252,24 @@ void initGPUgeometry() {
   glBufferData(GL_ARRAY_BUFFER, vertexBufferSize, g_vertexPositions.data(), GL_DYNAMIC_READ);
   glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3*sizeof(GLfloat), 0);
   glEnableVertexAttribArray(0);
-
+  size_t colorBufferSize = sizeof(float)*g_vertexColors.size();
+  glGenBuffers(1, &g_colorVbo);
+  glBindBuffer(GL_ARRAY_BUFFER, g_colorVbo);
+  glBufferData(GL_ARRAY_BUFFER, colorBufferSize, g_vertexColors.data(), GL_STATIC_DRAW);
+  glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 3*sizeof(GLfloat), 0);
+  glEnableVertexAttribArray(1);
 #else
   glCreateBuffers(1, &g_posVbo);
   glBindBuffer(GL_ARRAY_BUFFER, g_posVbo);
   glNamedBufferStorage(g_posVbo, vertexBufferSize, g_vertexPositions.data(), GL_DYNAMIC_STORAGE_BIT); // Create a data storage on the GPU and fill it from a CPU array
   glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3*sizeof(GLfloat), 0);
   glEnableVertexAttribArray(0);
-
+  size_t colorBufferSize = sizeof(float)*g_vertexColors.size();
+  glCreateBuffers(1, &g_colorVbo);
+  glBindBuffer(GL_ARRAY_BUFFER, g_colorVbo);
+  glNamedBufferStorage(g_colorVbo, colorBufferSize, g_vertexColors.data(), 0);
+  glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 3*sizeof(GLfloat), 0);
+  glEnableVertexAttribArray(1);
 #endif
 
   // Same for an index buffer object that stores the list of indices of the
