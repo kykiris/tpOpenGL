@@ -61,6 +61,22 @@ std::vector<float> g_vertexPositions;
 std::vector<unsigned int> g_triangleIndices;
 std::vector<float> g_vertexColors;
 
+class Mesh {
+  public:
+  void init();
+  void render();
+  static std::shared_ptr<Mesh> genSphere(const size_t resolution=16);
+
+  private:
+  std::vector<float> m_vertexPositions;
+  std::vector<float> m_vertexNormals;
+  std::vector<unsigned int> m_triangleIndices;
+  GLuint m_vao = 0;
+  GLuint m_posVbo = 0;
+  GLuint m_normalVbo = 0;
+  GLuint m_ibo = 0;
+};
+
 // Basic camera model
 class Camera {
 public:
