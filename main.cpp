@@ -122,6 +122,7 @@ GLuint loadTextureFromFileToGPU(const std::string &filename) {
   // TODO: create a texture and upload the image data in GPU memory using
   // glGenTextures, glBindTexture, glTexParameteri, and glTexImage2D
 
+
   // Free useless CPU memory
   stbi_image_free(data);
   glBindTexture(GL_TEXTURE_2D, 0); // unbind the texture
@@ -350,11 +351,105 @@ void update(const float currentTimeInSec) {
 
 }
 
+void Mesh::init(){
+  glGenVertexArrays(1, &m_vao);
+  glBindVertexArray(m_vao);
+
+  glGenBuffers(1, &m_posVbo);
+  glBindBuffer(GL_ARRAY_BUFFER, m_posVbo);
+  glBufferData(
+    GL_ARRAY_BUFFER,
+    m_vertexPositions.size() * sizeof(float),
+    m_vertexPositions.data(),
+    GL_STATIC_DRAW
+  );
+  glVertexAttribPointer(0,3, GL_FLOAT, GL_FALSE, 3*sizeof(float), nullptr);
+  glEnableVertexAttribArray(0);
+
+  // normal Data
+  glGenBuffers(1, &m_normalVbo);
+  glBindBuffer(GL_ARRAY_BUFFER, m_normalVbo);
+  glBufferData(
+      GL_ARRAY_BUFFER,
+      m_vertexNormals.size() * sizeof(float),
+      m_vertexNormals.data(),
+      GL_STATIC_DRAW);
+  glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), nullptr);
+  glEnableVertexAttribArray(1);
+
+  glGenBuffers(1, &m_ibo);
+  glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_ibo);
+  glBufferData(
+      GL_ELEMENT_ARRAY_BUFFER,
+      m_triangleIndices.size() * sizeof(unsigned int),
+      m_triangleIndices.data(),
+      GL_STATIC_DRAW);
+
+  glBindVertexArray(0);
+}
+
+void Mesh::render() {
+  glBindVertexArray(m_vao);
+  glDrawElements(
+      GL_TRIANGLES,
+      static_cast<GLsizei>(m_triangleIndices.size()),
+      GL_UNSIGNED_INT,
+      nullptr);
+}
+
+std::shared_ptr<Mesh> Mesh::genSphere(const size_t resolution) {
+  auto mesh = std::make_shared<Mesh>();
+
+  const size_t n = resolution < 3 ? 3 : resolution;
+  const float pi = 3.14159265358979323846f;
+
+  for (size_t i=0;i<=n;++i){
+    const float theta = pi * static_cast<float>(i) / static_cast<float>(n);        // 위도: 위에서 아래로
+    
+    for(size_t j=0;j<=n;++j){
+      const float phi   = 2.0f * pi * j / static_cast<float>(n);    // 경도: 한 바퀴
+
+      const float x = std::sin(theta) * std::cos(phi);
+      const float y = std::cos(theta);
+      const float z = std::sin(theta) * std::sin(phi);
+
+      // 위도·경도 반복문에서 x, y, z를 계산한 뒤:
+      mesh->m_vertexPositions.push_back(x);
+      mesh->m_vertexPositions.push_back(y);
+      mesh->m_vertexPositions.push_back(z);
+
+      mesh->m_vertexNormals.push_back(x);
+      mesh->m_vertexNormals.push_back(y);
+      mesh->m_vertexNormals.push_back(z);
+
+      // 삼각형 인덱스도 만든 다음
+    }
+  }
+
+  for (size_t i=0;i<n;++i){
+    for (size_t j=0;j<n; ++j){
+      unsigned int a = static_cast<int>(i * (n + 1) + j);
+      unsigned int b = static_cast<int>((i + 1) * (n + 1) + j);
+      unsigned int c = a + 1;
+      unsigned int d = b + 1;
+
+      mesh->m_triangleIndices.insert(mesh->m_triangleIndices.end(), {
+          a, c, b,
+          c, d, b
+      });
+    }
+  }
+  return mesh;
+}
+
 int main(int argc, char ** argv) {
-  init(); // Your initialization code (user interface, OpenGL states, scene with geometry, material, lights, etc)
+  // init(); // Your initialization code (user interface, OpenGL states, scene with geometry, material, lights, etc)
+  Mesh::genSphere(32);
+  Mesh m;
+  
   while(!glfwWindowShouldClose(g_window)) {
     update(static_cast<float>(glfwGetTime()));
-    render();
+    m.render();
     glfwSwapBuffers(g_window);
     glfwPollEvents();
   }
