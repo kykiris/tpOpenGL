@@ -76,6 +76,7 @@ class Mesh {
   GLuint m_normalVbo = 0;
   GLuint m_ibo = 0;
 };
+std::shared_ptr<Mesh> g_sphere;
 
 // Basic camera model
 class Camera {
@@ -322,6 +323,9 @@ void init() {
   initGPUprogram();
   initGPUgeometry();
   initCamera();
+
+  g_sphere = Mesh::genSphere(32);
+  g_sphere->init();
 }
 
 void clear() {
@@ -341,8 +345,7 @@ void render() {
   glUniformMatrix4fv(glGetUniformLocation(g_program, "viewMat"), 1, GL_FALSE, glm::value_ptr(viewMatrix)); // compute the view matrix of the camera and pass it to the GPU program
   glUniformMatrix4fv(glGetUniformLocation(g_program, "projMat"), 1, GL_FALSE, glm::value_ptr(projMatrix)); // compute the projection matrix of the camera and pass it to the GPU program
 
-  glBindVertexArray(g_vao);     // activate the VAO storing geometry data
-  glDrawElements(GL_TRIANGLES, g_triangleIndices.size(), GL_UNSIGNED_INT, 0); // Call for rendering: stream the current GPU geometry through the current GPU program
+  g_sphere->render();
 }
 
 // Update any accessible variable based on the current time
@@ -443,13 +446,10 @@ std::shared_ptr<Mesh> Mesh::genSphere(const size_t resolution) {
 }
 
 int main(int argc, char ** argv) {
-  // init(); // Your initialization code (user interface, OpenGL states, scene with geometry, material, lights, etc)
-  Mesh::genSphere(32);
-  Mesh m;
-  
+  init(); // Your initialization code (user interface, OpenGL states, scene with geometry, material, lights, etc)
   while(!glfwWindowShouldClose(g_window)) {
     update(static_cast<float>(glfwGetTime()));
-    m.render();
+    render();
     glfwSwapBuffers(g_window);
     glfwPollEvents();
   }
