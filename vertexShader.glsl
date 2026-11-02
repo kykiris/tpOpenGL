@@ -3,14 +3,17 @@
 layout(location=0) in vec3 vPosition;
 layout(location=1) in vec3 vNormal;
 
+uniform mat4 modelMat;
 uniform mat4 viewMat, projMat;
 
 out vec3 fPosition;
 out vec3 fNormal;
 
 void main() {
-    gl_Position = projMat * viewMat * vec4(vPosition, 1.0);
+    vec4 worldPosition = modelMat * vec4(vPosition, 1.0);
 
-    fPosition = vPosition;
-    fNormal = vNormal;
+    gl_Position = projMat * viewMat * worldPosition;
+
+    fPosition = worldPosition.xyz;
+    fNormal = normalize(mat3(modelMat) * vNormal);
 }

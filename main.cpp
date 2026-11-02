@@ -54,6 +54,7 @@ GLuint g_vao = 0;
 GLuint g_posVbo = 0;
 GLuint g_colorVbo = 0;
 GLuint g_ibo = 0;
+float g_currentTime = 0.0f;
 
 // All vertex positions packed in one array [x0, y0, z0, x1, y1, z1, ...]
 std::vector<float> g_vertexPositions;
@@ -311,9 +312,9 @@ void initCamera() {
   glfwGetWindowSize(g_window, &width, &height);
   g_camera.setAspectRatio(static_cast<float>(width)/static_cast<float>(height));
 
-  g_camera.setPosition(glm::vec3(0.0, 0.0, 3.0));
-  g_camera.setNear(0.1);
-  g_camera.setFar(80.1);
+  g_camera.setPosition(glm::vec3(5.0f, 8.0f, 30.0f));
+  g_camera.setNear(0.1f);
+  g_camera.setFar(80.0f);
 }
 
 void init() {
@@ -336,7 +337,7 @@ void clear() {
 }
 
 // The main rendering call
-void render() {
+/* void render() {
   glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Erase the color and z buffers.
 
   const glm::mat4 viewMatrix = g_camera.computeViewMatrix();
@@ -354,12 +355,70 @@ void render() {
   );
   g_sphere->render();
 
+} */
+void render() {
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+    const glm::mat4 viewMatrix = g_camera.computeViewMatrix();
+    const glm::mat4 projMatrix = g_camera.computeProjectionMatrix();
+
+    const float earthOrbitAngle = 0.5f * g_currentTime;
+    const float earthSpinAngle  = 2.0f * earthOrbitAngle;
+
+    const float moonOrbitAngle  = 2.0f * earthSpinAngle;
+    const float moonSpinAngle   = moonOrbitAngle;
+
+    glUniformMatrix4fv(
+        glGetUniformLocation(g_program, "viewMat"),
+        1, GL_FALSE, glm::value_ptr(viewMatrix)
+    );
+    glUniformMatrix4fv(
+        glGetUniformLocation(g_program, "projMat"),
+        1, GL_FALSE, glm::value_ptr(projMatrix)
+    );
+
+    auto drawPlanet = [](const glm::mat4& model, const glm::vec3& planetColor) {
+        glUniformMatrix4fv(
+            glGetUniformLocation(g_program, "modelMat"),
+            1, GL_FALSE, glm::value_ptr(model)
+        );
+        glUniform3f(
+            glGetUniformLocation(g_program, "objectColor"),
+            planetColor.r, planetColor.g, planetColor.b
+        );
+        g_sphere->render();
+    };
+
+    glm::mat4 sunModel = glm::scale(glm::mat4(1.0f), glm::vec3(kSizeSun));
+    drawPlanet(sunModel, glm::vec3(1.0f, 0.8f, 0.2f));
+
+    const glm::mat4 earthModel =
+        glm::rotate(glm::mat4(1.0f), earthOrbitAngle, glm::vec3(0, 1, 0))
+        * glm::translate(glm::mat4(1.0f), glm::vec3(kRadOrbitEarth, 0, 0))
+        * glm::rotate(glm::mat4(1.0f), glm::radians(23.5f), glm::vec3(0, 0, 1))
+        * glm::rotate(glm::mat4(1.0f), earthSpinAngle, glm::vec3(0, 1, 0))
+        * glm::scale(glm::mat4(1.0f), glm::vec3(kSizeEarth));
+
+    drawPlanet(earthModel, glm::vec3(0.2f, 0.7f, 0.3f));
+
+    const float earthX = kRadOrbitEarth * std::cos(earthOrbitAngle);
+    const float earthZ = -kRadOrbitEarth * std::sin(earthOrbitAngle);
+
+    const float moonX = earthX + kRadOrbitMoon * std::cos(moonOrbitAngle);
+    const float moonZ = earthZ - kRadOrbitMoon * std::sin(moonOrbitAngle);
+
+    const glm::mat4 moonModel =
+        glm::translate(glm::mat4(1.0f), glm::vec3(moonX, 0, moonZ))
+        * glm::rotate(glm::mat4(1.0f), moonSpinAngle, glm::vec3(0, 1, 0))
+        * glm::scale(glm::mat4(1.0f), glm::vec3(kSizeMoon));
+
+    drawPlanet(moonModel, glm::vec3(0.3f, 0.5f, 0.9f));
 }
 
 // Update any accessible variable based on the current time
 void update(const float currentTimeInSec) {
   // std::cout << currentTimeInSec << std::endl;
-
+    g_currentTime = currentTimeInSec;
 }
 
 void Mesh::init(){

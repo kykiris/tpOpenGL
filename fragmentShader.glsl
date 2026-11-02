@@ -3,6 +3,7 @@
 in vec3 fPosition;
 in vec3 fNormal;
 
+uniform vec3 objectColor;
 uniform vec3 camPos;
 
 out vec4 color;
@@ -19,7 +20,7 @@ void main() {
     // 빛이 표면에서 반사되는 방향
     vec3 r = reflect(-l, n);
 
-    vec3 objectColor = vec3(0.8, 0.6, 0.3);
+    // vec3 objectColor = vec3(0.8, 0.6, 0.3);
     vec3 lightColor = vec3(1.0, 1.0, 1.0);
 
     // 주변광: 빛이 직접 닿지 않는 곳도 조금 보이게 함
