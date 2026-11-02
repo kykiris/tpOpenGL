@@ -345,7 +345,15 @@ void render() {
   glUniformMatrix4fv(glGetUniformLocation(g_program, "viewMat"), 1, GL_FALSE, glm::value_ptr(viewMatrix)); // compute the view matrix of the camera and pass it to the GPU program
   glUniformMatrix4fv(glGetUniformLocation(g_program, "projMat"), 1, GL_FALSE, glm::value_ptr(projMatrix)); // compute the projection matrix of the camera and pass it to the GPU program
 
+  const glm::vec3 camPosition = g_camera.getPosition();
+  glUniform3f(
+      glGetUniformLocation(g_program, "camPos"),
+      camPosition.x,
+      camPosition.y,
+      camPosition.z
+  );
   g_sphere->render();
+
 }
 
 // Update any accessible variable based on the current time
