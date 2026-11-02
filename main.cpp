@@ -48,6 +48,8 @@ GLFWwindow *g_window = nullptr;
 
 // GPU objects
 GLuint g_program = 0; // A GPU program contains at least a vertex shader and a fragment shader
+GLuint g_earthTexID = 0;
+GLuint g_moonTexID = 0;
 
 // OpenGL identifiers
 GLuint g_vao = 0;
@@ -76,6 +78,8 @@ class Mesh {
   GLuint m_posVbo = 0;
   GLuint m_normalVbo = 0;
   GLuint m_ibo = 0;
+  std::vector<float> m_vertexTexCoords;
+  GLuint m_texCoordVbo = 0;
 };
 std::shared_ptr<Mesh> g_sphere;
 
@@ -120,10 +124,31 @@ GLuint loadTextureFromFileToGPU(const std::string &filename) {
     &numComponents, // 1 for a 8 bit grey-scale image, 3 for 24bits RGB image, 4 for 32bits RGBA image
     0);
 
-  GLuint texID;
+  // GLuint texID;
   // TODO: create a texture and upload the image data in GPU memory using
   // glGenTextures, glBindTexture, glTexParameteri, and glTexImage2D
+  GLuint texID = 0;
+  
+  if (data == nullptr) {
+      std::cerr << "Failed to load texture: " << filename << std::endl;
+      return texID;
+  }
 
+  GLenum format = (numComponents == 4) ? GL_RGBA : GL_RGB;
+
+  glGenTextures(1, &texID);
+  glBindTexture(GL_TEXTURE_2D, texID);
+
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
+  glTexImage2D(
+      GL_TEXTURE_2D, 0, format,
+      width, height, 0,
+      format, GL_UNSIGNED_BYTE, data
+  );
 
   // Free useless CPU memory
   stbi_image_free(data);
@@ -235,6 +260,10 @@ void initGPUprogram() {
 
   glUseProgram(g_program);
   // TODO: set shader variables, textures, etc.
+  g_earthTexID = loadTextureFromFileToGPU("media/earth.jpg");
+  g_moonTexID = loadTextureFromFileToGPU("media/moon.jpg");
+
+  glUniform1i(glGetUniformLocation(g_program, "albedoTex"), 0);
 }
 
 // Define your mesh(es) in the CPU memory
@@ -312,7 +341,7 @@ void initCamera() {
   glfwGetWindowSize(g_window, &width, &height);
   g_camera.setAspectRatio(static_cast<float>(width)/static_cast<float>(height));
 
-  g_camera.setPosition(glm::vec3(5.0f, 8.0f, 30.0f));
+  g_camera.setPosition(glm::vec3(5.0f, 8.0f, 20.0f));
   g_camera.setNear(0.1f);
   g_camera.setFar(80.0f);
 }
@@ -377,20 +406,53 @@ void render() {
         1, GL_FALSE, glm::value_ptr(projMatrix)
     );
 
-    auto drawPlanet = [](const glm::mat4& model, const glm::vec3& planetColor) {
+    const glm::vec3 camPosition = g_camera.getPosition();
+
+    glUniform3f(
+        glGetUniformLocation(g_program, "camPos"),
+        camPosition.x, camPosition.y, camPosition.z
+    );
+    
+    glUniform3f(
+        glGetUniformLocation(g_program, "lightPos"),
+        0.0f, 0.0f, 0.0f
+    );
+
+    auto drawPlanet = [](const glm::mat4& model,
+                     const glm::vec3& planetColor,
+                     GLuint textureID, bool isSun) {
+        // modelMat과 objectColor를 설정하는 기존 코드
+
+        const bool hasTexture = textureID != 0;
+        glUniform1i(
+            glGetUniformLocation(g_program, "useTexture"),
+            hasTexture ? 1 : 0
+        );
+
         glUniformMatrix4fv(
-            glGetUniformLocation(g_program, "modelMat"),
+           glGetUniformLocation(g_program, "modelMat"),
             1, GL_FALSE, glm::value_ptr(model)
         );
+
+        
+        glUniform1i(
+            glGetUniformLocation(g_program, "isSun"),
+            isSun ? 1 : 0
+        );
+
         glUniform3f(
             glGetUniformLocation(g_program, "objectColor"),
             planetColor.r, planetColor.g, planetColor.b
         );
+
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, textureID);
+
         g_sphere->render();
     };
 
     glm::mat4 sunModel = glm::scale(glm::mat4(1.0f), glm::vec3(kSizeSun));
-    drawPlanet(sunModel, glm::vec3(1.0f, 0.8f, 0.2f));
+    drawPlanet(sunModel, glm::vec3(1.0f, 0.8f, 0.2f), 0, true);
 
     const glm::mat4 earthModel =
         glm::rotate(glm::mat4(1.0f), earthOrbitAngle, glm::vec3(0, 1, 0))
@@ -399,7 +461,7 @@ void render() {
         * glm::rotate(glm::mat4(1.0f), earthSpinAngle, glm::vec3(0, 1, 0))
         * glm::scale(glm::mat4(1.0f), glm::vec3(kSizeEarth));
 
-    drawPlanet(earthModel, glm::vec3(0.2f, 0.7f, 0.3f));
+    drawPlanet(earthModel, glm::vec3(0.2f, 0.7f, 0.3f), g_earthTexID, false);
 
     const float earthX = kRadOrbitEarth * std::cos(earthOrbitAngle);
     const float earthZ = -kRadOrbitEarth * std::sin(earthOrbitAngle);
@@ -412,7 +474,7 @@ void render() {
         * glm::rotate(glm::mat4(1.0f), moonSpinAngle, glm::vec3(0, 1, 0))
         * glm::scale(glm::mat4(1.0f), glm::vec3(kSizeMoon));
 
-    drawPlanet(moonModel, glm::vec3(0.3f, 0.5f, 0.9f));
+    drawPlanet(moonModel, glm::vec3(0.3f, 0.5f, 0.9f), g_moonTexID, false);
 }
 
 // Update any accessible variable based on the current time
@@ -446,6 +508,17 @@ void Mesh::init(){
       GL_STATIC_DRAW);
   glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), nullptr);
   glEnableVertexAttribArray(1);
+
+  glGenBuffers(1, &m_texCoordVbo);
+  glBindBuffer(GL_ARRAY_BUFFER, m_texCoordVbo);
+  glBufferData(
+      GL_ARRAY_BUFFER,
+      m_vertexTexCoords.size() * sizeof(float),
+      m_vertexTexCoords.data(),
+      GL_STATIC_DRAW
+  );
+  glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(float), nullptr);
+  glEnableVertexAttribArray(2);
 
   glGenBuffers(1, &m_ibo);
   glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_ibo);
@@ -491,6 +564,12 @@ std::shared_ptr<Mesh> Mesh::genSphere(const size_t resolution) {
       mesh->m_vertexNormals.push_back(x);
       mesh->m_vertexNormals.push_back(y);
       mesh->m_vertexNormals.push_back(z);
+
+      const float u = static_cast<float>(j) / static_cast<float>(n);
+      const float v = static_cast<float>(i) / static_cast<float>(n);
+
+      mesh->m_vertexTexCoords.push_back(u);
+      mesh->m_vertexTexCoords.push_back(v);
 
       // 삼각형 인덱스도 만든 다음
     }

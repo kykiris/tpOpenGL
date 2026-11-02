@@ -5,6 +5,8 @@ layout(location=1) in vec3 vNormal;
 
 uniform mat4 modelMat;
 uniform mat4 viewMat, projMat;
+layout(location=2) in vec2 vTexCoord;
+out vec2 fTexCoord;
 
 out vec3 fPosition;
 out vec3 fNormal;
@@ -16,4 +18,5 @@ void main() {
 
     fPosition = worldPosition.xyz;
     fNormal = normalize(mat3(modelMat) * vNormal);
+    fTexCoord = vTexCoord;
 }
