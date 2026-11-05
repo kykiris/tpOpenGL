@@ -366,25 +366,6 @@ void clear() {
 }
 
 // The main rendering call
-/* void render() {
-  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Erase the color and z buffers.
-
-  const glm::mat4 viewMatrix = g_camera.computeViewMatrix();
-  const glm::mat4 projMatrix = g_camera.computeProjectionMatrix();
-
-  glUniformMatrix4fv(glGetUniformLocation(g_program, "viewMat"), 1, GL_FALSE, glm::value_ptr(viewMatrix)); // compute the view matrix of the camera and pass it to the GPU program
-  glUniformMatrix4fv(glGetUniformLocation(g_program, "projMat"), 1, GL_FALSE, glm::value_ptr(projMatrix)); // compute the projection matrix of the camera and pass it to the GPU program
-
-  const glm::vec3 camPosition = g_camera.getPosition();
-  glUniform3f(
-      glGetUniformLocation(g_program, "camPos"),
-      camPosition.x,
-      camPosition.y,
-      camPosition.z
-  );
-  g_sphere->render();
-
-} */
 void render() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -421,7 +402,7 @@ void render() {
     auto drawPlanet = [](const glm::mat4& model,
                      const glm::vec3& planetColor,
                      GLuint textureID, bool isSun) {
-        // modelMat과 objectColor를 설정하는 기존 코드
+        // modelMat n objectColor setting
 
         const bool hasTexture = textureID != 0;
         glUniform1i(
@@ -451,24 +432,25 @@ void render() {
         g_sphere->render();
     };
 
+    // sun
     glm::mat4 sunModel = glm::scale(glm::mat4(1.0f), glm::vec3(kSizeSun));
     drawPlanet(sunModel, glm::vec3(1.0f, 0.8f, 0.2f), 0, true);
 
-    const glm::mat4 earthModel =
-        glm::rotate(glm::mat4(1.0f), earthOrbitAngle, glm::vec3(0, 1, 0))
-        * glm::translate(glm::mat4(1.0f), glm::vec3(kRadOrbitEarth, 0, 0))
+    // earth
+    const float earthX = kRadOrbitEarth * std::cos(earthOrbitAngle);
+    const float earthZ = -kRadOrbitEarth * std::sin(earthOrbitAngle);
+
+    const glm::mat4 earthModel = glm::translate(glm::mat4(1.0f), glm::vec3(earthX, 0.0f, earthZ))
         * glm::rotate(glm::mat4(1.0f), glm::radians(23.5f), glm::vec3(0, 0, 1))
         * glm::rotate(glm::mat4(1.0f), earthSpinAngle, glm::vec3(0, 1, 0))
         * glm::scale(glm::mat4(1.0f), glm::vec3(kSizeEarth));
 
     drawPlanet(earthModel, glm::vec3(0.2f, 0.7f, 0.3f), g_earthTexID, false);
 
-    const float earthX = kRadOrbitEarth * std::cos(earthOrbitAngle);
-    const float earthZ = -kRadOrbitEarth * std::sin(earthOrbitAngle);
-
     const float moonX = earthX + kRadOrbitMoon * std::cos(moonOrbitAngle);
     const float moonZ = earthZ - kRadOrbitMoon * std::sin(moonOrbitAngle);
 
+    // moon
     const glm::mat4 moonModel =
         glm::translate(glm::mat4(1.0f), glm::vec3(moonX, 0, moonZ))
         * glm::rotate(glm::mat4(1.0f), moonSpinAngle, glm::vec3(0, 1, 0))
@@ -556,7 +538,6 @@ std::shared_ptr<Mesh> Mesh::genSphere(const size_t resolution) {
       const float y = std::cos(theta);
       const float z = std::sin(theta) * std::sin(phi);
 
-      // 위도·경도 반복문에서 x, y, z를 계산한 뒤:
       mesh->m_vertexPositions.push_back(x);
       mesh->m_vertexPositions.push_back(y);
       mesh->m_vertexPositions.push_back(z);
@@ -570,8 +551,6 @@ std::shared_ptr<Mesh> Mesh::genSphere(const size_t resolution) {
 
       mesh->m_vertexTexCoords.push_back(u);
       mesh->m_vertexTexCoords.push_back(v);
-
-      // 삼각형 인덱스도 만든 다음
     }
   }
 
